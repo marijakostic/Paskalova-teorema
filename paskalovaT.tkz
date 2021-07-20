@@ -1,0 +1,135 @@
+\begin{tikzpicture}[scale=0.75]
+\clip (0,0) rectangle (16.000000,12.000000);
+{\footnotesize
+
+% Drawing circle k
+\draw [line width=0.016cm] (9.551828,5.700000) arc (0:41:2.051828 and 2.051828) -- (9.027006,7.070493);%
+\draw [line width=0.016cm] (8.972424,7.128975) -- (8.950862,7.150862) arc (45:81:2.051828 and 2.051828) -- (7.815973,7.727353);%
+\draw [line width=0.016cm] (7.736705,7.738129) -- (7.714475,7.740588) arc (84:204:2.051828 and 2.051828) -- (5.633564,4.847698);%
+\draw [line width=0.016cm] (5.668206,4.775592) -- (5.671807,4.768490) arc (207:241:2.051828 and 2.051828) -- (6.522768,3.895833);%
+\draw [line width=0.016cm] (6.593838,3.859111) -- (6.600537,3.855829) arc (244:294:2.051828 and 2.051828) -- (8.340204,3.828087);%
+\draw [line width=0.016cm] (8.412533,3.862261) -- (8.431510,3.871807) arc (297:340:2.051828 and 2.051828) -- (9.436793,5.022629);%
+\draw [line width=0.016cm] (9.461726,5.098641) -- (9.462173,5.100103) arc (343:359:2.051828 and 2.051828) -- (9.551828,5.699999);%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Marking point A by circle
+\draw [line width=0.016cm] (9.000000,7.100000) circle (0.040000);%
+\draw (8.970000,7.130000) node [anchor=north west] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (5.650534,4.811476) circle (0.040000);%
+\draw (5.620534,4.841476) node [anchor=north west] { $B$ };%
+
+% Marking point C by circle
+\draw [line width=0.016cm] (9.449630,5.060514) circle (0.040000);%
+\draw (9.419630,5.090514) node [anchor=north west] { $C$ };%
+
+% Marking point D by circle
+\draw [line width=0.016cm] (6.558125,3.877126) circle (0.040000);%
+\draw (6.528125,3.907126) node [anchor=north west] { $D$ };%
+
+% Marking point E by circle
+\draw [line width=0.016cm] (8.376536,3.844822) circle (0.040000);%
+\draw (8.346536,3.874822) node [anchor=north west] { $E$ };%
+
+% Marking point F by circle
+\draw [line width=0.016cm] (7.776392,7.733128) circle (0.040000);%
+\draw (7.746392,7.763128) node [anchor=north west] { $F$ };%
+
+% Changing color 0 0 255
+\definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+\color{r0g0b255}% 
+
+% Drawing line ab
+\draw [line width=0.016cm] (15.439808,11.500000) -- (9.033027,7.122566);%
+\draw [line width=0.016cm] (8.966973,7.077434) -- (8.014545,6.426688);%
+\draw [line width=0.016cm] (7.948491,6.381556) -- (5.683561,4.834042);%
+\draw [line width=0.016cm] (5.617507,4.788911) -- (4.373706,3.939083);%
+\draw [line width=0.016cm] (4.307652,3.893952) -- (0.917647,1.577731);%
+\draw [line width=0.016cm] (0.851593,1.532599) -- (0.500000,1.292373);%
+
+% Drawing line cd
+\draw [line width=0.016cm] (0.500000,1.397754) -- (0.847601,1.540014);%
+\draw [line width=0.016cm] (0.921640,1.570316) -- (6.521105,3.861975);%
+\draw [line width=0.016cm] (6.595145,3.892276) -- (8.226785,4.560048);%
+\draw [line width=0.016cm] (8.300825,4.590350) -- (9.412611,5.045363);%
+\draw [line width=0.016cm] (9.486650,5.075665) -- (11.362383,5.843335);%
+\draw [line width=0.016cm] (11.436422,5.873636) -- (15.500000,7.536712);%
+
+% Drawing line ef
+\draw [line width=0.016cm] (8.892796,0.500000) -- (8.382637,3.805290);%
+\draw [line width=0.016cm] (8.370434,3.884354) -- (8.269907,4.535667);%
+\draw [line width=0.016cm] (8.257704,4.614731) -- (8.207628,4.939167);%
+\draw [line width=0.016cm] (8.195425,5.018231) -- (7.987620,6.364590);%
+\draw [line width=0.016cm] (7.975417,6.443654) -- (7.782493,7.693596);%
+\draw [line width=0.016cm] (7.770290,7.772659) -- (7.194990,11.500000);%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Marking point L by circle
+\draw [line width=0.016cm] (0.884620,1.555165) circle (0.040000);%
+\draw (0.914620,1.585165) node [anchor=north east] { $L$ };%
+
+% Marking point M by circle
+\draw [line width=0.016cm] (8.263805,4.575199) circle (0.040000);%
+\draw (8.293805,4.605199) node [anchor=north east] { $M$ };%
+
+% Marking point N by circle
+\draw [line width=0.016cm] (7.981518,6.404122) circle (0.040000);%
+\draw (8.011518,6.434122) node [anchor=north east] { $N$ };%
+
+% Changing color 51 153 102
+\definecolor{r51g153b102}{rgb}{0.200000,0.600000,0.400000}%
+\color{r51g153b102}% 
+
+% Drawing line bc
+\draw [line width=0.016cm] (0.500000,4.473849) -- (5.610619,4.808860);%
+\draw [line width=0.016cm] (5.690448,4.814093) -- (8.161612,4.976082);%
+\draw [line width=0.016cm] (8.241441,4.981315) -- (9.409716,5.057898);%
+\draw [line width=0.016cm] (9.489545,5.063131) -- (15.500000,5.457127);%
+
+% Drawing line de
+\draw [line width=0.016cm] (0.500000,3.984746) -- (4.300685,3.917228);%
+\draw [line width=0.016cm] (4.380672,3.915807) -- (6.518131,3.877836);%
+\draw [line width=0.016cm] (6.598119,3.876415) -- (8.336542,3.845533);%
+\draw [line width=0.016cm] (8.416530,3.844112) -- (15.500000,3.718276);%
+
+% Drawing line af
+\draw [line width=0.016cm] (0.500000,11.498126) -- (7.740865,7.751510);%
+\draw [line width=0.016cm] (7.811918,7.714745) -- (8.964474,7.118382);%
+\draw [line width=0.016cm] (9.035526,7.081618) -- (11.363876,5.876868);%
+\draw [line width=0.016cm] (11.434928,5.840103) -- (15.500000,3.736727);%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Marking point P by circle
+\draw [line width=0.016cm] (4.340679,3.916518) circle (0.040000);%
+\draw (4.370679,3.946518) node [anchor=north east] { $P$ };%
+
+% Marking point Q by circle
+\draw [line width=0.016cm] (8.201527,4.978699) circle (0.040000);%
+\draw (8.231527,5.008699) node [anchor=north east] { $Q$ };%
+
+% Marking point R by circle
+\draw [line width=0.016cm] (11.399402,5.858486) circle (0.040000);%
+\draw (11.429402,5.888486) node [anchor=north east] { $R$ };%
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Drawing line pqr
+\draw [line width=0.016cm] (0.500000,2.859885) -- (4.302112,3.905907);%
+\draw [line width=0.016cm] (4.379246,3.927128) -- (8.162959,4.968088);%
+\draw [line width=0.016cm] (8.240094,4.989309) -- (11.360835,5.847875);%
+\draw [line width=0.016cm] (11.437969,5.869096) -- (15.500000,6.986626);%
+\color{black}
+}
+\end{tikzpicture}

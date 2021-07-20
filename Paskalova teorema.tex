@@ -1,0 +1,116 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[top=1cm,left=2cm,right=2cm,bottom=1.5cm]{geometry}
+
+\usepackage[serbian]{babel}
+\usepackage{amssymb,amsmath,amsthm}
+
+\newtheorem{teorema}{{Teorema}}
+\theoremstyle{definition}
+\newtheorem{primer}{{Primer}}
+
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{tikz}
+
+\usepackage{cancel}
+
+\title{\bf Paskalova teorema}
+\author{Marija Kosti\'{c}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+    Blez Paskal (Blaise Pascal, 1623-1662), veliki francuski matemati\v{c}ar, ve\'{c} je sa 16 godina napisao svoje prvo delo iz geometrije. Njegovo ime nosi vi\v{s}e rezultata u matematici, a me\dj{}u njima je i {\it Paskalova teorema o tetivnom \v{s}estouglu} o kojoj \'{c}e biti re\v{c}i u ovom radu.
+\end{abstract}
+
+\section*{Teorema i dokaz}
+
+Pre nego \v{s}to formuli\v{s}emo Paskalovu teoremu, uve\v{s}\'{c}emo Menelajevu teoremu koju \'{c}emo koristiti u dokazu Paskalove teoreme.   
+
+\begin{teorema}[\bf Menelajeva teorema]
+\label{th:menelajeva}
+Neka su $P,Q$ i $R$ ta\v{c}ke pravih odre\dj{}enih ivicama $BC, CA$ i $AB$ trougla $ABC$. Ta\v{c}ke $P,Q$ i $R$ su kolinearne ako i samo ako je:
+\begin{equation*}
+    \frac{\overrightarrow{BP}}{\overrightarrow{PC}}\cdot    \frac{\overrightarrow{CQ}}{\overrightarrow{QA}}\cdot    \frac{\overrightarrow{AR}}{\overrightarrow{RB}}=-1.
+\end{equation*}
+
+
+\end{teorema}
+
+\begin{teorema}[\bf Paskalova teorema]
+\label{th:paskalova}
+Neka je $ABCDEF$ \v{s}estougao upisan u krug $k$. Prave $AB$ i $DE$ seku se u ta\v{c}ki $P$, prave $BC$ i $EF$ seku se u ta\v{c}ki $Q$ i prave $CD$ i $FA$ seku se u ta\v{c}ki $R$. Tada su ta\v{c}ke $P,Q$ i $R$ kolinearne.
+\end{teorema}
+
+\begin{proof}
+Neka se prave $AB$ i $DE$ seku u ta\v{c}ki $P$, $BC$ i $EF$ u ta\v{c}ki $Q$, a $CD$ i $FA$ u ta\v{c}ki $R$. Neka je $\{L\}=AB \cap CD, \{M\}=CD \cap EF$ i $\{N\}=EF \cap AB$ (Slika \ref{slk:paskal}).
+\begin{figure}[h]
+    \begin{center}
+        \input{paskalovaT.tkz}
+    \end{center}
+    \caption{Paskalova teorema}
+    \label{slk:paskal}
+\end{figure}
+
+\noindent{}Posmatrajmo $\bigtriangleup LMN$ sa slike (\ref{slk:paskal}). Tri puta \'{c}emo primeniti Teoremu \ref{th:menelajeva} na posmatrani trougao.\\
+\noindent{}Prava $ED$ se\v{c}e prave $NL, LM$ i $MN$ redom u ta\v{c}kama $P,D$ i $E$.Iz Teoreme \ref{th:menelajeva} va\v{z}i da je:
+\begin{equation}
+\label{eq:1}
+        \frac{\overrightarrow{NP}}{\overrightarrow{PL}}\cdot    \frac{\overrightarrow{LD}}{\overrightarrow{DM}}\cdot    \frac{\overrightarrow{ME}}{\overrightarrow{EN}}=-1.
+\end{equation}
+
+\noindent{}Prava $FA$ se\v{c}e prave $LM, MN$ i $NL$ redom u ta\v{c}kama $R,F$ i $A$.Iz Teoreme \ref{th:menelajeva} va\v{z}i da je:
+\begin{equation}
+\label{eq:2}
+    \frac{\overrightarrow{LR}}{\overrightarrow{RM}}\cdot    \frac{\overrightarrow{MF}}{\overrightarrow{FN}}\cdot    \frac{\overrightarrow{NA}}{\overrightarrow{AL}}=-1.
+\end{equation}
+
+\noindent{}Prava $BC$ se\v{c}e prave $MN, NL$ i $LM$ redom u ta\v{c}kama $Q,B$ i $C$.Iz Teoreme \ref{th:menelajeva} va\v{z}i da je:
+\begin{equation}
+\label{eq:3}
+    \frac{\overrightarrow{MQ}}{\overrightarrow{QN}}\cdot    \frac{\overrightarrow{NB}}{\overrightarrow{BL}}\cdot    \frac{\overrightarrow{LC}}{\overrightarrow{CM}}=-1.
+\end{equation}
+
+\noindent Iz jednakosti (\ref{eq:1}) dobijamo:
+\begin{equation}
+\label{eq:4}
+    \frac{\overrightarrow{NP}}{\overrightarrow{PL}}=-\frac{{\overrightarrow{DM}}\cdot{\overrightarrow{EN}}}{{\overrightarrow{LD}\cdot{\overrightarrow{ME}}}}.
+\end{equation}
+
+\noindent Iz jednakosti (\ref{eq:2}) dobijamo:
+\begin{equation}
+\label{eq:5}
+    \frac{\overrightarrow{LR}}{\overrightarrow{RM}}=-\frac{{\overrightarrow{FN}}\cdot{\overrightarrow{AL}}}{{\overrightarrow{MF}\cdot{\overrightarrow{NA}}}}.
+\end{equation}
+
+\noindent Iz jednakosti (\ref{eq:3}) dobijamo:
+\begin{equation}
+\label{eq:6}
+    \frac{\overrightarrow{MQ}}{\overrightarrow{QN}}=-\frac{{\overrightarrow{BL}}\cdot{\overrightarrow{CM}}}{{\overrightarrow{NB}\cdot{\overrightarrow{LC}}}}.
+\end{equation}
+
+\noindent{}Potencije ta\v{c}aka $L,M$ i $N$ u odnosu na krug $k$ izra\v{z}avamo jednakostima:
+\begin{equation}
+\label{eq:7}
+    NA\cdot NB=NE\cdot NF, LC\cdot LD=LA \cdot LB, ME\cdot MF=MC \cdot MD.
+\end{equation}
+
+\noindent{}Mno\v{z}enjem jednakosti (\ref{eq:4}), (\ref{eq:5}) i (\ref{eq:6}) i kori\v{s}\'{c}enjem jednakosti (\ref{eq:7}) dobijamo:
+\begin{align*}
+	  \frac{\overrightarrow{NP}}{\overrightarrow{PL}}\cdot\frac{\overrightarrow{LR}}{\overrightarrow{RM}} \cdot \frac{\overrightarrow{MQ}}{\overrightarrow{QN}} &=
+    -\frac{{\overrightarrow{DM}}\cdot {\overrightarrow{EN}}\cdot {\overrightarrow{FN}}\cdot {\overrightarrow{AL}}\cdot {\overrightarrow{BL}} \cdot {\overrightarrow{CM}}}{{\overrightarrow{LD}}\cdot {\overrightarrow{ME}}\cdot {\overrightarrow{MF}}\cdot {\overrightarrow{NA}}\cdot {\overrightarrow{NB}} \cdot {\overrightarrow{LC}}}=-\frac{{\overrightarrow{DM}}\cdot {\overrightarrow{EN}}\cdot {\overrightarrow{FN}}\cdot {\overrightarrow{AL}}\cdot {\overrightarrow{BL}} \cdot {\overrightarrow{CM}}}{{\overrightarrow{NE}}\cdot {\overrightarrow{NF}}\cdot {\overrightarrow{LA}}\cdot {\overrightarrow{LB}}\cdot {\overrightarrow{MC}} \cdot {\overrightarrow{MD}}}\\ &= -\frac{(-\cancel{{\overrightarrow{MD}})}\cdot {(-\cancel{\overrightarrow{NE}})}\cdot {(-\cancel{\overrightarrow{NF}})}\cdot {(-\cancel{\overrightarrow{LA}})}\cdot {(-\cancel{\overrightarrow{LB}})} \cdot {(-\cancel{\overrightarrow{MC}})}}{{\cancel{\overrightarrow{NE}}}\cdot {\cancel{\overrightarrow{NF}}}\cdot {\cancel{\overrightarrow{LA}}}\cdot {\cancel{\overrightarrow{LB}}}\cdot {\cancel{\overrightarrow{MC}}} \cdot {\cancel{\overrightarrow{MD}}}} = -1.
+\end{align*}
+
+\noindent{}Iz poslednje jednakosti na osnovu obrnutog smera Teoreme \ref{th:menelajeva} zaklju\v{c}ujemo da su ta\v{c}ke $P,Q$ i $R$ kolinearne, \v{c}ime je Teorema \ref{th:paskalova} dokazana.
+
+\end{proof}
+
+
+\end{document}

@@ -1,0 +1,61 @@
+dim 160 120 
+area 5 5 155 115
+point O 75 57 % definisemo tacku O-centar kruga
+point A 90 71 % A je jedna tacka sa kruga
+
+circle k O A %konstruisemo krug k sa centrom u O poluprecnika OA
+drawcircle k %crtamo krug k
+color 0 0 0
+oncircle B O A
+oncircle C O A
+oncircle D O A
+oncircle E O A
+oncircle F O A
+
+cmark_rb A
+cmark_rb B
+cmark_rb C
+cmark_rb D
+cmark_rb E
+cmark_rb F
+
+line ab A B
+line cd C D
+line ef E F
+line bc B C
+line de D E
+line af A F
+
+color 0 0 255
+drawline ab
+drawline cd
+drawline ef
+
+color 0 0 0
+intersec L ab cd
+cmark_lb L
+
+intersec M ef cd
+cmark_lb M
+
+intersec N ab ef
+cmark_lb N
+
+color 51 153 102
+drawline bc
+drawline de
+drawline af
+
+color 0 0 0
+intersec P ab de
+cmark_lb P
+intersec Q bc ef
+cmark_lb Q
+intersec R cd af
+cmark_lb R
+
+color 255 0 0
+line pqr P Q
+drawline pqr
+
+
